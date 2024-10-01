@@ -16,12 +16,33 @@ This is a Python script designed to brute force test default PostgreSQL logins u
 - `psycopg2` for connecting to PostgreSQL
 - `colorama` for color coding the output
 
+### Installing PostgreSQL Client
+
+#### On Ubuntu/Debian:
+
+```bash
+sudo apt-get update
+sudo apt-get install postgresql-client
+```
+
+#### On CentOS/RHEL:
+
+```bash
+sudo yum install postgresql
+```
+
+#### On macOS:
+
+```bash
+brew install postgresql
+```
+
 ## Installation
 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/postgres-login-test.git
+    git clone https://github.com/DrDark1999/postgres-login-test.git
     cd postgres-login-test
     ```
 
@@ -36,4 +57,4 @@ This is a Python script designed to brute force test default PostgreSQL logins u
 Run the script using Python and provide the target PostgreSQL server's IP address and port (optional).
 
 ```bash
-python postgres_login_test_combined_with_colors.py --host <target_ip> --port <target_port>
+python postgres_login_test.py --host <target_ip> --port <target_port>
